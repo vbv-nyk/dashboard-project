@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-body {
-    overflow: hidden;
-}
 
 .container {
     display: grid;
@@ -18,7 +15,7 @@ body {
 }
 
 .sidebar {
-    height: 100vh;
+    height: auto;
     display: grid;
     padding: 20px;
     gap: 30px;
@@ -38,14 +35,16 @@ body {
 
 .main-content {
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: max-content;
 }
 
 .top-bar {
     display: grid;
     grid-template-columns: max-content 2fr 1fr;
     align-items: center;
-    background-color: rgb(185, 60, 60);
+    row-gap: 10px;
+    background-color: rgb(161, 14, 34);
+    padding-top: 10px;
     padding-left: 50px;
 }
 
@@ -127,16 +126,62 @@ body {
     border-radius: 30px;
 }
 
-.main-content .content {
+.main-content>.content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(28, 79, 92);
 }
 
 .content .trending {
     grid-column: 2/3;
 }
 
-img {
+.content .project-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
+    align-items: baseline;
+    gap: 20px;
+    padding-left: 20px;
+    grid-row: 1/3;
+}
+
+.project-lists .header {
+    grid-column: 1/-1;
+    text-align: center;
+    align-self: center;
+    font-size: large;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+.project-lists .card {
+    box-shadow: 3px 2px rgba(102, 72, 72, 0.418);
+    height: calc(100% - 100px);
+    border-left: rgb(75, 75, 11) 2px solid;
+    border-radius: 20px;
+    background-color: rgb(137, 168, 80);
+    padding: 50px 30px;
+
+}
+
+.card .title {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.card .content {
+    line-height: 2;
+}
+
+#fishy {
+    font-size: 10px;
+    word-spacing: 3px;
+    padding-left: 20px;
+}
+
+
+.content img {
     height: 1px;
 }
