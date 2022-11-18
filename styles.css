@@ -8,7 +8,7 @@
     grid-template-columns: 1fr 3fr;
 }
 
-.top-bar {
+.main-content .top-bar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr max-content;
@@ -35,11 +35,21 @@
     height: 70px;
 }
 
-.content {
+.main-content .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.trending {
+.content .trending {
+    width: max-content;
+    grid-column: 2/3;
+}
+
+.content .profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profiles .desc {
     grid-column: 2/3;
 }
