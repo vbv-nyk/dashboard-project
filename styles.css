@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     color: white;
-    font-family: 'Sono', sans-serif;
+    font-family: 'Mukta', sans-serif;
 }
 
 
@@ -202,9 +202,14 @@
     height: fit-content;
 }
 
+
 .card-container .card {
     padding: 20px;
     border-bottom: 1px rgb(75, 77, 75) solid;
+}
+
+.card-container .card:last-child {
+    border-bottom: none;
 }
 
 .card-container .card .title,
