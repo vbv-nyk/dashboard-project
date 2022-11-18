@@ -3,9 +3,13 @@
     padding: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
 .container {
     display: grid;
-    grid-template-columns: max(20%, 170px) 3fr;
+    grid-template-columns: max(15%, 190px) 3fr;
 }
 
 .container img {
@@ -24,11 +28,113 @@
     grid-template-rows: max-content max-content max-content;
 }
 
-.item {
+.sidebar .item {
     display: flex;
     width: max-content;
     align-items: center;
     gap: 10px;
+    padding: 10px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: max-content 2fr 1fr;
+    align-items: center;
+    background-color: rgb(185, 60, 60);
+    padding-left: 50px;
+}
+
+.search {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    grid-column: 1/3;
+}
+
+.search .search-icon img {
+    height: 25px;
+    vertical-align: middle;
+}
+
+.search input {
+    width: 80%;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(194, 193, 193);
+}
+
+.top-bar .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bolder;
+}
+
+.profile .notification-icon img {
+    height: 25px;
+    vertical-align: middle;
+}
+
+.profile .profile-picture img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+
+.greeting-container {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-template-rows: max-content;
+    align-items: center;
+    gap: 20px;
+}
+
+.greeting-container .messages,
+.profile-picture {
+    grid-row: 1/3;
+}
+
+.greeting-container .profile-picture img {
+    height: 80px;
+}
+
+.greeting-container .message-2 {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.options {
+    display: flex;
+    grid-column: 2/4;
+    gap: 15px;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.options button {
+    border: none;
+    background-color: rgb(17, 55, 70);
+    color: white;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.main-content .content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content .trending {
+    grid-column: 2/3;
 }
 
 img {
