@@ -87,20 +87,23 @@
 }
 
 
-.greeting-container {
+.greeting-container,
+.profile-container {
     display: grid;
-    grid-template-columns: min-content max-content;
+    grid-template-columns: 70px max-content;
     grid-template-rows: max-content;
     align-items: center;
     gap: 20px;
 }
 
 .greeting-container .messages,
-.profile-picture {
+.profile-picture,
+.profile-container .details {
     grid-row: 1/3;
 }
 
-.greeting-container .profile-picture img {
+.greeting-container .profile-picture img,
+.profile-container img {
     height: 80px;
 }
 
@@ -185,12 +188,14 @@
     margin-bottom: 20px;
 }
 
-.announcements .card-container {
+.announcements .card-container,
+.trending .profiles {
     background-color: rgb(175, 167, 167);
     border-radius: 20px;
     margin: auto;
     width: 250px;
     padding: 30px;
+    height: fit-content;
 }
 
 .card-container .card {
@@ -198,7 +203,8 @@
     border-bottom: 1px rgb(75, 77, 75) solid;
 }
 
-.card-container .card .title {
+.card-container .card .title,
+.trending .header {
     font-weight: bolder;
     padding-bottom: 10px;
 }
@@ -207,6 +213,4 @@
     line-height: 1.3;
 }
 
-.content img {
-    height: 50px;
-}
+/*Handling the profile containers for trending along with greeting container, using css here to only design the container */
