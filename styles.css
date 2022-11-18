@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 
@@ -20,7 +21,6 @@
     padding: 20px;
     gap: 30px;
     background-color: rgb(17, 55, 70);
-    color: white;
     font-weight: bolder;
     grid-template-rows: max-content max-content max-content;
 }
@@ -43,7 +43,7 @@
     grid-template-columns: max-content 2fr 1fr;
     align-items: center;
     row-gap: 10px;
-    background-color: rgb(161, 14, 34);
+    background-color: rgb(182, 108, 108);
     padding-top: 10px;
     padding-left: 50px;
 }
@@ -132,7 +132,7 @@
 .main-content>.content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: rgb(28, 79, 92);
+    background-color: rgb(34, 37, 37);
 }
 
 .content .trending {
@@ -163,7 +163,7 @@
     height: calc(100% - 100px);
     border-left: rgb(75, 75, 11) 2px solid;
     border-radius: 20px;
-    background-color: rgb(137, 168, 80);
+    background-color: rgb(62, 65, 58);
     padding: 50px 30px;
 
 }
