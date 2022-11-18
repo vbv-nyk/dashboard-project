@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'Sono', sans-serif;
 }
 
 
@@ -127,6 +130,7 @@
     font-weight: bolder;
     padding: 10px 20px;
     border-radius: 30px;
+
 }
 
 .main-content>.content {
